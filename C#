@@ -1,0 +1,15 @@
+### C#
+
+```csharp
+using System;
+class Program {
+ static void Main() {
+  string chars = "abc123!@#";
+  Random rnd = new Random();
+  string pass = "";
+  for(int i=0;i<12;i++)
+   pass += chars[rnd.Next(chars.Length)];
+  Console.WriteLine(pass);
+ }
+}
+```
