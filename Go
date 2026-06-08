@@ -1,0 +1,17 @@
+### Go
+
+```go
+package main
+import (
+ "fmt"
+ "math/rand"
+)
+func main(){
+ chars := "abc123!@#"
+ pass := ""
+ for i:=0;i<12;i++{
+  pass += string(chars[rand.Intn(len(chars))])
+ }
+ fmt.Println(pass)
+}
+```
