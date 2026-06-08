@@ -1,0 +1,12 @@
+### JavaScript
+
+```js
+const chars = "abc123!@#";
+let pass = "";
+for(let i=0;i<12;i++){
+ pass += chars[Math.floor(Math.random()*chars.length)];
+}
+console.log(pass);
+```
+
+
